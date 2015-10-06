@@ -1,0 +1,122 @@
+
+  
+  img:hover{
+   transform:translateY(200px);
+-ms-transform:translateY(200px); /* prefix for IE 9 */
+-webkit-transform:translateY(250px); /* prefix for Safari and Chrome */?????????????
+}
+#bg_img {
+	position:relative;
+    background-image:url(cloud.jpg);
+ background-size: 100% 400%;
+    background-repeat: repeat-x;
+    -webkit-animation: 2s slideBg infinite linear;
+width:2000px;
+height:600px;
+    
+}
+#fg_img{
+position:relative;
+top:250px;
+left:500px;
+width:100px;
+height:100px;
+}
+
+
+
+#obs_img {
+	
+ position:relative;
+background-image:url(cloud.png);
+right:10000px;
+top:200px;
+left:500px;
+ background-repeat: no-repeat;
+ -webkit-animation: 10s slideBg2 infinite linear;
+width:10000px;
+height:200px;
+
+
+
+}
+
+@-webkit-keyframes slideBg {
+   100% {
+        background-position: 0 0;
+    }
+    0% {
+        background-position: 300px 0;
+    }
+}
+
+
+@-webkit-keyframes slideBg2 {
+  100% {
+        background-position: 0 0;
+    }
+    0% {
+        background-position: 1000px 0;
+    }
+}
+
+
+#obs1_img
+
+{
+
+
+width: 40px;
+    height: 40px;
+    background-image:url(eagle.png);
+
+    position: relative;
+    -webkit-animation-name: example; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 4s; /* Chrome, Safari, Opera */
+    -webkit-animation-iteration-count: infinite; /* Chrome, Safari, Opera */
+    animation-name: example;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+
+
+}
+
+
+@keyframes example {
+    0%   { left:1000px; top:0px;}
+    25%  { left:800px; top:50px;}
+    50%  { left:600px; top:0px;}
+    75%  { left:400px; top:-30px;}
+    100% { left:200px; top:-50px;}
+}
+
+
+
+#obs2_img
+
+{
+
+
+width: 40px;
+    height: 40px;
+    background-image:url(eagle.png);
+
+    position: relative;
+    -webkit-animation-name: example; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 4s; /* Chrome, Safari, Opera */
+    -webkit-animation-iteration-count: infinite; /* Chrome, Safari, Opera */
+    animation-name: example;
+    animation-duration: 17s;
+    animation-iteration-count: infinite;
+
+
+}
+
+
+@keyframes example {
+    0%   { left:1000px; top:0px;}
+    25%  { left:800px; top:50px;}
+    50%  { left:600px; top:0px;}
+    75%  { left:400px; top:-30px;}
+    100% { left:200px; top:-50px;}
+}

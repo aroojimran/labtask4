@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="customStyles.css">
+</head>
+<body>
+
+
+    <div id="bg_img">
+	<div id="fg_img">
+  <img class="hello" src="air.png" alt="tintin" width="100" height="100"/>
+	</div>
+
+
+
+<div id="obs_img" width="10000px">
+
+</div>
+
+<div id="obs1_img" width="20" height="20">
+
+</div>
+
+<div id="obs2_img" width="20" height="20">
+
+</div>
+    </div>
+
+<script>
+<button type="button" onclick="SetInterval()"> START! </button>
+
+var fg_img=document.getElementbyID("fg_img");
+var obs_img=document.getElementbyID("obs_img");
+
+function SetInterval()
+{
+var x = parseInt(document.getElementById("fg_img").style.right);
+var y=parseInt(document.getElementById("obs_img").style.right);
+
+
+var width = parseInt(document.getElementById('obs_img').offsetWidth);
+
+    
+   
+    
+    
+    
+    if(x< y+width) {
+            
+    
+    
+alert("you lose");      
+}
+   
+}
+
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
